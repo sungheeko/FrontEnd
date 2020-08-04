@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML 종합 연습문제2</title>
+</head>
+<body>
+
+    <form action="tset">
+        <fieldset>
+            <legend>납품자 정보</legend>
+            <ol>
+                <li>
+                <label>납품자명 : </label> 
+                <input type="text" name="delivery" placeholder="name" required=""> <br><br>
+                </li>
+                <li>
+                <label>email : </label> 
+                <input type="email" name="email" placeholder="answs@naver.com"> <br><br>
+                </li>
+                <li>
+                <label>홈페이지 : </label>
+                <input type="url" name="homepage" placeholder="http://"> <br><br>
+                </li>
+            </ol>
+        </fieldset>
+
+        <fieldset>
+            <legend>납품정보</legend>
+            <ul>
+                <li>상품명 : <input type="text" name="product"></li> <br><br>
+                <li>납품수량 : <input type="number" name="amount" placeholder="최소 100" min="100"></li> <br><br>
+                <li>납품등급 : <input type="range" name="point" min="0" step="5"></li> <br><br>
+                <li>기타사항 : <textarea rows="2"></textarea></li>
+            </ul>
+        </fieldset>
+    </form>
+    <br>
+    <button type="submit">send message</button>
+    
+</body>
+</html>
