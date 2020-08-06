@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>시험1</title>
+</head>
+<body>
+    <form action="test.do" method="get">
+    <fieldset>
+        <legend>회원가입</legend>
+        <table border="1">
+            <tr>
+                <th>아이디</th>
+                <td>
+                    <input type="text" name="userId" placeholder="아이디를 입력하시오." maxlength="15" required="">
+                </td>
+
+            </tr>
+            <tr>
+                <th>비밀번호</th>
+                <td>
+                    <input type="password" name="checkPwd" placeholder="총 8~15글자로 입력하시오" maxlength="15" required="">
+                </td>
+            </tr>
+            <tr>
+                <th>비밀번호 확인</th>
+                <td>
+                    <input type="password" name="checkPwd" placeholder="한번 더 입력해주세요." maxlength="15" required="">
+                </td>
+            </tr>
+            <tr>
+                <th>이름</th>
+                <td>
+                    <input type="text" name="userName" placeholder="이름을 입력하시오">
+                </td>
+            </tr>
+            <tr>
+                <th>나이</th>
+                <td>
+                    <input type="number" name="age" min="20" max="50">
+                </td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <input type="radio" name="gender" value="M">
+                    <label>남</label>
+                    <input type="radio" name="gender" value="F"> 
+                    <label>여</label>
+                </td>
+            </tr>
+            <tr>
+                <th>취미</th>
+                <td>
+                    <input type="checkbox" name="hobby" value="reading">
+                    <label>독서</label>
+                    <input type="checkbox" name="hobby" value="movie">
+                    <label>영화</label>
+                    <input type="checkbox" name="hobby" value="sport">
+                    <label>운동</label>
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+        <input type="submit" value="회원가입">
+        <input type="reset">
+    </fieldset>
+    </form>
+</body>
+</html>
